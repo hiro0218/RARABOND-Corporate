@@ -154,6 +154,8 @@ export default {};
 </script>
 
 <style lang="scss">
+@import '~open-color/open-color.scss';
+
 .section {
   padding: 100px 0 80px;
 
@@ -173,7 +175,7 @@ export default {};
 // 対応可能ケア
 .available-care {
   &__message {
-    color: red;
+    color: $oc-red-9;
     text-align: center;
   }
 }
@@ -192,7 +194,7 @@ export default {};
 }
 
 .usecase-message {
-  color: red;
+  color: $oc-red-9;
   text-align: center;
 }
 
