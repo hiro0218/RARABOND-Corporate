@@ -20,7 +20,7 @@
           <li>リハビリ</li>
           <li>入浴介助</li>
         </ul>
-        <div>
+        <div class="available-care__message">
           緊急時24時間365日対応します
         </div>
       </div>
@@ -28,18 +28,18 @@
     <section class="section">
       <h2 class="section__title">訪問看護のご利用方法</h2>
       <div class="section-container">
-        <div>
+        <div class="usecase-figure">
           利用者様<br />
           ↓<br />
           主治医・MSW・ケアマネジャー<br />
           ↓<br />
           訪問看護ステーション<br />
         </div>
-        <div>
+        <div class="usecase-notice">
           ◇主治医等を介さず直接「なちゅらる」へお問い合わせ頂いても構いません。<br />
           ◇入院中の場合は、訪問看護師が病院に伺い、医師、病院看護師などと相談の上、退院後の生活、在宅医療、訪問看護利用の調整を致します。
         </div>
-        <div>
+        <div class="usecase-message">
           かかりつけ医師の指示に基づいて、在宅で医療されている方のご自宅を、看護師が定期的に訪問し、医療されている方、ご家族を、誠心誠意応援させていただきます。
         </div>
       </div>
@@ -101,8 +101,10 @@
     <section class="section">
       <h2 class="section__title">訪問エリア</h2>
       <div class="section-container">
-        <div>宮崎市内（田野町・高岡町を除く）</div>
-        <div>エリア以外への訪問も状況により行っております。</div>
+        <div class="visiting-area">
+          <div class="visiting-area__text">宮崎市内（田野町・高岡町を除く）</div>
+          <div class="visiting-area__text-sub">エリア以外への訪問も状況により行っております。</div>
+        </div>
       </div>
     </section>
     <section class="section">
@@ -166,6 +168,45 @@ export default {};
 .section-container {
   max-width: 980px;
   margin: 0 auto;
-  font-size: 20px;
+}
+
+// 対応可能ケア
+.available-care {
+  &__message {
+    color: red;
+    text-align: center;
+  }
+}
+
+// 訪問看護のご利用方法
+.usecase-figure {
+  margin-bottom: 2rem;
+  padding: 0.8rem;
+  border: 2px solid #444;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.usecase-notice {
+  margin-bottom: 2rem;
+}
+
+.usecase-message {
+  color: red;
+  text-align: center;
+}
+
+// 訪問エリア
+.visiting-area {
+  text-align: center;
+
+  &__text {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  &__text-sub {
+    font-size: 0.95rem;
+  }
 }
 </style>
