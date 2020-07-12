@@ -160,10 +160,21 @@ export default {};
   padding: 100px 0 80px;
 
   &__title {
-    margin-bottom: 30px;
-    font-size: 40px;
+    margin-bottom: 1.85rem;
+    font-size: 2rem;
     letter-spacing: 0.025em;
+    line-height: 1.25;
     text-align: center;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1.25em;
+      height: 4px;
+      margin: 1rem auto 0;
+      border-radius: 2px;
+      background: $oc-red-6;
+    }
   }
 }
 
