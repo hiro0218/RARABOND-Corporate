@@ -36,9 +36,7 @@
           訪問看護ステーション<br />
         </div>
         <div>
-          ◇主治医等を介さず直接「なちゅらる」へお問い合わせ頂いても構いません。
-        </div>
-        <div>
+          ◇主治医等を介さず直接「なちゅらる」へお問い合わせ頂いても構いません。<br />
           ◇入院中の場合は、訪問看護師が病院に伺い、医師、病院看護師などと相談の上、退院後の生活、在宅医療、訪問看護利用の調整を致します。
         </div>
         <div>
@@ -160,7 +158,7 @@ export default {};
   &__title {
     margin-bottom: 30px;
     font-size: 40px;
-    font-weight: 900;
+    letter-spacing: 0.025em;
     text-align: center;
   }
 }
