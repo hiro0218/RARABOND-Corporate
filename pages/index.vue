@@ -193,10 +193,11 @@ export default {};
 
 // 訪問看護のご利用方法
 .usecase-figure {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   padding: 0.8rem;
-  border: 2px solid #444;
-  font-size: 1.5rem;
+  border: 2px solid $oc-gray-8;
+  border-radius: 2px;
+  font-size: 1.2rem;
   text-align: center;
 }
 
