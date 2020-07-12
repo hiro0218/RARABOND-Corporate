@@ -1,7 +1,7 @@
 {
   "name": "rarabond-corporate",
   "version": "1.0.0",
-  "description": "",
+  "description": "看護とリハビリの訪問ステーション",
   "author": "hiro0218",
   "private": true,
   "scripts": {
