@@ -1,8 +1,15 @@
 <template>
   <div>
+    <header class="header">
+      <div class="o-container">
+        <span class="header__description">看護とリハビリの訪問ステーション</span>
+        <img src="~/assets/image/logo.png" class="header__image" />
+        <span class="header__name">なちゅらる</span>
+      </div>
+    </header>
     <section class="section">
       <h2 class="section__title">対応可能なケア</h2>
-      <div class="section-container">
+      <div class="o-container">
         <ul>
           <li>経管栄養</li>
           <li>在宅中心静脈栄養</li>
@@ -27,7 +34,7 @@
     </section>
     <section class="section">
       <h2 class="section__title">訪問看護のご利用方法</h2>
-      <div class="section-container">
+      <div class="o-container">
         <div class="usecase-figure">
           利用者様<br />
           ↓<br />
@@ -46,7 +53,7 @@
     </section>
     <section class="section">
       <h2 class="section__title">対象になる方</h2>
-      <div class="section-container">
+      <div class="o-container">
         <h3>医療保険対象者（1〜3割負担）</h3>
         <div>
           <ul>
@@ -100,7 +107,7 @@
     </section>
     <section class="section">
       <h2 class="section__title">訪問エリア</h2>
-      <div class="section-container">
+      <div class="o-container">
         <div class="visiting-area">
           <div class="visiting-area__text">宮崎市内（田野町・高岡町を除く）</div>
           <div class="visiting-area__text-sub">エリア以外への訪問も状況により行っております。</div>
@@ -109,7 +116,7 @@
     </section>
     <section class="section">
       <h2 class="section__title">アクセス</h2>
-      <div class="section-container">
+      <div class="o-container">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3386.573431908987!2d131.4311150507192!3d31.9181854811476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538b75b0725d673%3A0xa227e9f24aa507bd!2z5pyJ6ZmQ5Lya56S-IOeZveawtOiIjuS5s-alrQ!5e0!3m2!1sja!2sjp!4v1594528220121!5m2!1sja!2sjp"
           width="100%"
@@ -124,7 +131,7 @@
     </section>
     <section class="section">
       <h2 class="section__title">会社概要</h2>
-      <div class="section-container">
+      <div class="o-container">
         <div>
           <div>会社名</div>
           <div>株式会社 ララボンド</div>
@@ -156,6 +163,28 @@ export default {};
 <style lang="scss">
 @import '~open-color/open-color.scss';
 
+.header {
+  padding: 100px 0;
+  text-align: center;
+
+  &__description {
+    display: block;
+    font-size: 1.6rem;
+  }
+
+  &__image {
+    width: 400px;
+    height: auto;
+    line-height: 0;
+  }
+
+  &__name {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
 .section {
   padding: 100px 0 80px;
 
@@ -178,7 +207,7 @@ export default {};
   }
 }
 
-.section-container {
+.o-container {
   max-width: 980px;
   margin: 0 auto;
 }
