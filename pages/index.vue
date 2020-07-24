@@ -132,25 +132,19 @@
     <section class="section">
       <h2 class="section__title">会社概要</h2>
       <div class="o-container">
-        <div>
-          <div>会社名</div>
-          <div>株式会社 ララボンド</div>
-        </div>
-        <div>
-          <div>設立日</div>
-          <div>令和2年 7月20日</div>
-        </div>
-        <div>
-          <div>代表者</div>
-          <div>永倉 美穂子</div>
-        </div>
-        <div>
-          <div>所在地</div>
-          <div>
+        <dl class="about-list">
+          <dt class="about-list__title">会社名</dt>
+          <dd class="about-list__data">株式会社 ララボンド</dd>
+          <dt class="about-list__title">設立日</dt>
+          <dd class="about-list__data">令和2年 7月20日</dd>
+          <dt class="about-list__title">代表者</dt>
+          <dd class="about-list__data">永倉 美穂子</dd>
+          <dt class="about-list__title">所在地</dt>
+          <dd class="about-list__data">
             〒880-0000<br />
             宮崎県宮崎市宮崎駅東
-          </div>
-        </div>
+          </dd>
+        </dl>
       </div>
     </section>
   </div>
@@ -250,6 +244,27 @@ export default {};
 
   &__text-sub {
     font-size: 0.95rem;
+  }
+}
+
+// 会社概要
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__title {
+    width: 20%;
+    margin-bottom: 0.25rem;
+    padding: 0.75rem;
+    background: $oc-gray-2;
+  }
+
+  &__data {
+    width: 80%;
+    margin: 0;
+    padding-left: 1rem;
+    font-size: 0.9rem;
   }
 }
 </style>
