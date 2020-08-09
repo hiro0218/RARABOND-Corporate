@@ -8,31 +8,6 @@
       </div>
     </header>
     <section class="section">
-      <h2 class="section__title">対応可能なケア</h2>
-      <div class="o-container">
-        <ul>
-          <li>経管栄養</li>
-          <li>在宅中心静脈栄養</li>
-          <li>点滴・静脈注射</li>
-          <li>膀胱留置カテーテル</li>
-          <li>腎ろう・膀胱ろう</li>
-          <li>在宅酸素療法</li>
-          <li>在宅自己腹膜潅流</li>
-          <li>人工肛門・人工膀胱</li>
-          <li>気管カニューレ</li>
-          <li>吸引・吸入</li>
-          <li>麻薬を用いた疼痛管理</li>
-          <li>褥瘡・創傷処置</li>
-          <li>人工呼吸療法</li>
-          <li>リハビリ</li>
-          <li>入浴介助</li>
-        </ul>
-        <div class="available-care__message">
-          緊急時24時間365日対応します
-        </div>
-      </div>
-    </section>
-    <section class="section">
       <h2 class="section__title">訪問看護のご利用方法</h2>
       <div class="o-container">
         <div class="usecase-figure">
@@ -204,14 +179,6 @@ export default {};
 .o-container {
   max-width: 980px;
   margin: 0 auto;
-}
-
-// 対応可能ケア
-.available-care {
-  &__message {
-    color: $oc-red-9;
-    text-align: center;
-  }
 }
 
 // 訪問看護のご利用方法
