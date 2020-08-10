@@ -8,6 +8,38 @@
       </div>
     </header>
     <section class="section">
+      <h2 class="section__title">サービスの内容</h2>
+      <div class="o-container">
+        <h3>健康状態や病状の観察・相談</h3>
+        <ul>
+          <li>血圧・体温・脈拍などの測定</li>
+          <li>かかりつけ医の指導に基づく医療処置</li>
+          <li>内服管理・食事指導</li>
+        </ul>
+        <h3>医療機器の管理・処置</h3>
+        <ul>
+          <li>点滴やカテーテルなどの医療処置</li>
+          <li>在宅酸素や人工呼吸器の管理</li>
+        </ul>
+        <h3>療養上のお世話</h3>
+        <ul>
+          <li>身体の清掃や入浴介助</li>
+        </ul>
+        <h3>医療・介護の相談</h3>
+        <ul>
+          <li>ご家族の状況に配慮した介護指導や様々な相談対応</li>
+        </ul>
+        <h3>在宅でのリハビリテーション</h3>
+        <ul>
+          <li>拘縮予防や機能の回復、嚥下機能訓練等</li>
+        </ul>
+        <h3>ターミナルケア</h3>
+        <ul>
+          <li>自宅で過ごせるような適切なサポート</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section">
       <h2 class="section__title">訪問看護のご利用方法</h2>
       <div class="o-container">
         <div class="usecase-figure">
