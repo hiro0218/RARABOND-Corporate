@@ -125,7 +125,7 @@
       <h2 class="section__title">アクセス</h2>
       <div class="o-container">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3386.573431908987!2d131.4311150507192!3d31.9181854811476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538b75b0725d673%3A0xa227e9f24aa507bd!2z5pyJ6ZmQ5Lya56S-IOeZveawtOiIjuS5s-alrQ!5e0!3m2!1sja!2sjp!4v1594528220121!5m2!1sja!2sjp"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1693.2905119254954!2d131.4329572581108!3d31.917979271985867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538b75ba150fd3f%3A0xf489b40a624e2f9a!2z44CSODgwLTA4Nzkg5a6u5bSO55yM5a6u5bSO5biC5a6u5bSO6aeF5p2x77yT5LiB55uu77yS4oiS77yS!5e0!3m2!1sja!2sjp!4v1597025984918!5m2!1sja!2sjp"
           width="100%"
           height="450"
           frameborder="0"
@@ -142,14 +142,24 @@
         <dl class="about-list">
           <dt class="about-list__title">会社名</dt>
           <dd class="about-list__data">株式会社 ララボンド</dd>
-          <dt class="about-list__title">設立日</dt>
-          <dd class="about-list__data">令和2年 7月20日</dd>
-          <dt class="about-list__title">代表者</dt>
-          <dd class="about-list__data">永倉 美穂子</dd>
+          <dt class="about-list__title">営業時間</dt>
+          <dd class="about-list__data">
+            月曜日〜金曜日 / 8:30〜17:30
+          </dd>
+          <dt class="about-list__title">定休日</dt>
+          <dd class="about-list__data">
+            土日祝日・お盆・年末年始
+          </dd>
           <dt class="about-list__title">所在地</dt>
           <dd class="about-list__data">
-            〒880-0000<br />
-            宮崎県宮崎市宮崎駅東
+            〒880-0879<br />
+            宮崎県宮崎市宮崎駅東 3-2-2 セリオ203
+          </dd>
+          <dt class="about-list__title">連絡先</dt>
+          <dd class="about-list__data">
+            電話: 0985-77-7680<br />
+            FAX: 0985-77-7681<br />
+            e-mail: natural.0901@iaa.itkeeper.ne.jp
           </dd>
         </dl>
       </div>
