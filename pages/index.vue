@@ -124,9 +124,9 @@
           </dd>
           <dt class="about-list__title">連絡先</dt>
           <dd class="about-list__data">
-            電話: 0985-77-7680<br />
+            電話: <a href="tel:0985777680">0985-77-7680</a><br />
             FAX: 0985-77-7681<br />
-            e-mail: natural.0901@iaa.itkeeper.ne.jp
+            e-mail: <a href="mailto:natural.0901@iaa.itkeeper.ne.jp">natural.0901@iaa.itkeeper.ne.jp</a>
           </dd>
         </dl>
       </div>
