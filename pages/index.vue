@@ -40,7 +40,7 @@
       </div>
     </section>
     <section class="section">
-      <h2 class="section__title">訪問看護のご利用方法</h2>
+      <h2 class="section__title">訪問看護サービスの流れ</h2>
       <div class="o-container">
         <div class="usecase-figure">
           利用者様<br />
@@ -56,7 +56,7 @@
       </div>
     </section>
     <section class="section">
-      <h2 class="section__title">対象になる方</h2>
+      <h2 class="section__title">訪問対象者</h2>
       <div class="o-container">
         <h3>介護保険対象の方</h3>
         <div>
@@ -84,7 +84,8 @@
       <div class="o-container">
         <div class="visiting-area">
           <div class="visiting-area__text">宮崎市内（田野町・高岡町を除く）</div>
-          <div class="visiting-area__text-sub">エリア以外への訪問も状況により行っております。</div>
+          <div class="visiting-area__text-sub">※その他の地域でもご相談ください</div>
+          <div class="visiting-area__text-sub">※緊急時24時間365日対応いたします</div>
         </div>
       </div>
     </section>
@@ -106,11 +107,12 @@
     <section class="section">
       <h2 class="section__title">会社概要</h2>
       <div class="o-container">
+        <div>
+          看護とリハビリの訪問ステーション<br />
+          なちゅらる
+        </div>
+
         <table class="about-list">
-          <tr>
-            <th class="about-list__title">会社名</th>
-            <td class="about-list__data">株式会社 ララボンド</td>
-          </tr>
           <tr>
             <th class="about-list__title">営業時間</th>
             <td class="about-list__data">

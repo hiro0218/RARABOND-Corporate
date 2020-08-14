@@ -1,7 +1,7 @@
 <template>
   <footer class="pg-footer">
     <small class="pg-footer-copyright">
-      ©ララボンド All Rights Reserved.
+      ©なちゅらる All Rights Reserved.
     </small>
   </footer>
 </template>
