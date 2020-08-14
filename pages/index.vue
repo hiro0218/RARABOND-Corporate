@@ -106,29 +106,39 @@
     <section class="section">
       <h2 class="section__title">会社概要</h2>
       <div class="o-container">
-        <dl class="about-list">
-          <dt class="about-list__title">会社名</dt>
-          <dd class="about-list__data">株式会社 ララボンド</dd>
-          <dt class="about-list__title">営業時間</dt>
-          <dd class="about-list__data">
-            月曜日〜金曜日 / 8:30〜17:30
-          </dd>
-          <dt class="about-list__title">定休日</dt>
-          <dd class="about-list__data">
-            土日祝日・お盆・年末年始
-          </dd>
-          <dt class="about-list__title">所在地</dt>
-          <dd class="about-list__data">
-            〒880-0879<br />
-            宮崎県宮崎市宮崎駅東 3-2-2 セリオ203
-          </dd>
-          <dt class="about-list__title">連絡先</dt>
-          <dd class="about-list__data">
-            電話: <a href="tel:0985777680">0985-77-7680</a><br />
-            FAX: 0985-77-7681<br />
-            e-mail: <a href="mailto:natural.0901@iaa.itkeeper.ne.jp">natural.0901@iaa.itkeeper.ne.jp</a>
-          </dd>
-        </dl>
+        <table class="about-list">
+          <tr>
+            <th class="about-list__title">会社名</th>
+            <td class="about-list__data">株式会社 ララボンド</td>
+          </tr>
+          <tr>
+            <th class="about-list__title">営業時間</th>
+            <td class="about-list__data">
+              月曜日〜金曜日 / 8:30〜17:30
+            </td>
+          </tr>
+          <tr>
+            <th class="about-list__title">定休日</th>
+            <td class="about-list__data">
+              土日祝日・お盆・年末年始
+            </td>
+          </tr>
+          <tr>
+            <th class="about-list__title">所在地</th>
+            <td class="about-list__data">
+              〒880-0879<br />
+              宮崎県宮崎市宮崎駅東 3-2-2 セリオ203
+            </td>
+          </tr>
+          <tr>
+            <th class="about-list__title">連絡先</th>
+            <td class="about-list__data">
+              電話: <a href="tel:0985777680">0985-77-7680</a><br />
+              FAX: 0985-77-7681<br />
+              e-mail: <a href="mailto:natural.0901@iaa.itkeeper.ne.jp">natural.0901@iaa.itkeeper.ne.jp</a>
+            </td>
+          </tr>
+        </table>
       </div>
     </section>
   </div>
@@ -225,10 +235,6 @@ export default {};
 
 // 会社概要
 .about-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-
   &__title {
     width: 20%;
     margin-bottom: 0.25rem;
