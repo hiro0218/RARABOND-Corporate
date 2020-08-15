@@ -45,10 +45,12 @@
         <div class="usecase-figure">
           <img src="~/assets/image/service-flow.png" class="usecase-figure__image" />
         </div>
-        <div class="usecase-notice">
-          ※主治医等を介さず直接「なちゅらる」へお問い合わせ頂いても構いません。<br />
-          ※入院中の方が、退院後に訪問看護のご利用を検討される場合は、訪問看護師が病院に伺い医師、病院看護師などと相談の上、退院後の生活、在宅医療、訪問看護利用の調整を致します。<br />
-        </div>
+        <ul class="usecase-notice u-unstyled-list">
+          <li>※主治医等を介さず直接「なちゅらる」へお問い合わせ頂いても構いません</li>
+          <li>
+            ※入院中の方が、退院後に訪問看護のご利用を検討される場合は、訪問看護師が病院に伺い医師、病院看護師などと相談の上、退院後の生活、在宅医療、訪問看護利用の調整を致します
+          </li>
+        </ul>
       </div>
     </section>
     <section class="section">
@@ -84,7 +86,7 @@
             </td>
           </tr>
         </table>
-        <ul>
+        <ul class="u-unstyled-list">
           <li>※負担割合に沿った自己負担があります</li>
           <li>※別途加算あり</li>
         </ul>
@@ -95,8 +97,10 @@
       <div class="o-container">
         <div class="visiting-area">
           <div class="visiting-area__text">宮崎市内（田野町・高岡町を除く）</div>
-          <div class="visiting-area__text-sub">※その他の地域でもご相談ください</div>
-          <div class="visiting-area__text-sub">※緊急時24時間365日対応いたします</div>
+          <ul class="u-unstyled-list">
+            <li class="visiting-area__text-sub">※その他の地域でもご相談ください</li>
+            <li class="visiting-area__text-sub">※緊急時24時間365日対応いたします</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -118,11 +122,6 @@
     <section class="section">
       <h2 class="section__title">会社概要</h2>
       <div class="o-container">
-        <div>
-          看護とリハビリの訪問ステーション<br />
-          なちゅらる
-        </div>
-
         <table class="about-list">
           <tr>
             <th class="about-list__title">営業時間</th>
@@ -263,14 +262,14 @@ export default {};
 // 会社概要
 .about-list {
   &__title {
-    width: 20%;
+    width: 30%;
     margin-bottom: 0.25rem;
     padding: 0.75rem;
     background: $oc-gray-2;
   }
 
   &__data {
-    width: 80%;
+    width: 70%;
     margin: 0;
     padding: 0.75rem;
     font-size: 0.9rem;
