@@ -55,24 +55,39 @@
       <h2 class="section__title">訪問対象者</h2>
       <div class="o-container">
         <h3>介護保険対象の方</h3>
-        <div>
-          看護: 30分 4,690円 / 1時間8,190円<br />
-          リハビリ: 20分 2,970円
-        </div>
+        <table class="target-price-list">
+          <tr>
+            <th class="target-price-list__head">看護</th>
+            <td class="target-price-list__data">30分 4,690円 / 1時間 8,190円</td>
+          </tr>
+          <tr>
+            <th class="target-price-list__head">リハビリ</th>
+            <td class="target-price-list__data">20分 2,970円</td>
+          </tr>
+        </table>
+
         <h3>医療保険対象の方</h3>
-        <div>
-          看護: 週3日まで5,550円/回<br />
-          週4日以降6,550円/回<br />
-          別途: 訪問看護管理療養費<br />
-          月の初回7,440円/月<br />
-          2回目以降 3,000円/月
-        </div>
-        <div>
-          <ul>
-            <li>※負担割合に沿った自己負担があります</li>
-            <li>※別途加算あり</li>
-          </ul>
-        </div>
+        <table class="target-price-list">
+          <tr>
+            <th class="target-price-list__head">看護</th>
+            <td class="target-price-list__data">
+              週3日まで5,550円/回<br />
+              週4日以降6,550円/回
+            </td>
+          </tr>
+          <tr>
+            <th class="target-price-list__head">別途</th>
+            <td class="target-price-list__data">
+              訪問看護管理療養費<br />
+              月の初回 7,440円/月<br />
+              2回目以降 3,000円/月
+            </td>
+          </tr>
+        </table>
+        <ul>
+          <li>※負担割合に沿った自己負担があります</li>
+          <li>※別途加算あり</li>
+        </ul>
       </div>
     </section>
     <section class="section">
@@ -217,6 +232,20 @@ export default {};
   text-align: center;
 }
 
+// 介護保険対象の方
+.target-price-list {
+  margin-bottom: 1rem;
+
+  &__head {
+    width: 8rem;
+    background: $oc-gray-2;
+  }
+
+  &__data {
+    padding: 0.75rem;
+  }
+}
+
 // 訪問エリア
 .visiting-area {
   text-align: center;
@@ -243,7 +272,7 @@ export default {};
   &__data {
     width: 80%;
     margin: 0;
-    padding-left: 1rem;
+    padding: 0.75rem;
     font-size: 0.9rem;
   }
 }
