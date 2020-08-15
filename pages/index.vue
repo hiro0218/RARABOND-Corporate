@@ -162,10 +162,18 @@ export default {};
 
 <style lang="scss">
 @import '~open-color/open-color.scss';
+@import '~assets/style/Tools/_mixin.scss';
 
 .header {
-  padding: 100px 0;
   text-align: center;
+
+  @include mobile {
+    padding: 80px 0;
+  }
+
+  @include desktop {
+    padding: 100px 0;
+  }
 
   &__description {
     display: block;
@@ -173,9 +181,16 @@ export default {};
   }
 
   &__image {
-    width: 400px;
     height: auto;
     line-height: 0;
+
+    @include mobile {
+      width: 50vw;
+    }
+
+    @include desktop {
+      width: 400px;
+    }
   }
 
   &__name {
