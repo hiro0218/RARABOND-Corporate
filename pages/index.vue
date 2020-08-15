@@ -43,11 +43,7 @@
       <h2 class="section__title">訪問看護サービスの流れ</h2>
       <div class="o-container">
         <div class="usecase-figure">
-          利用者様<br />
-          ↓<br />
-          主治医・MSW・ケアマネジャー<br />
-          ↓<br />
-          訪問看護ステーション<br />
+          <img src="~/assets/image/service-flow.png" class="usecase-figure__image" />
         </div>
         <div class="usecase-notice">
           ※主治医等を介さず直接「なちゅらる」へお問い合わせ頂いても構いません。<br />
@@ -206,10 +202,10 @@ export default {};
 .usecase-figure {
   margin-bottom: 1.5rem;
   padding: 0.8rem;
-  border: 2px solid $oc-gray-8;
-  border-radius: 2px;
-  font-size: 1.2rem;
-  text-align: center;
+
+  &__image {
+    width: 100%;
+  }
 }
 
 .usecase-notice {
