@@ -23,7 +23,7 @@
         </ul>
         <h3>療養上のお世話</h3>
         <ul>
-          <li>身体の清掃や入浴介助</li>
+          <li>身体の清拭や入浴介助</li>
         </ul>
         <h3>医療・介護の相談</h3>
         <ul>
@@ -41,10 +41,10 @@
     </section>
     <section class="section">
       <h2 class="section__title">訪問看護サービスの流れ</h2>
+      <div class="usecase-figure">
+        <img src="~/assets/image/service-flow.png" class="usecase-figure__image" />
+      </div>
       <div class="o-container">
-        <div class="usecase-figure">
-          <img src="~/assets/image/service-flow.png" class="usecase-figure__image" />
-        </div>
         <ul class="usecase-notice u-unstyled-list">
           <li>※主治医等を介さず直接「なちゅらる」へお問い合わせ頂いても構いません</li>
           <li>
@@ -96,7 +96,7 @@
       <h2 class="section__title">訪問エリア</h2>
       <div class="o-container">
         <div class="visiting-area">
-          <div class="visiting-area__text">宮崎市内（田野町・高岡町を除く）</div>
+          <div class="visiting-area__text">宮崎市内<br />（田野町・高岡町を除く）</div>
           <ul class="u-unstyled-list">
             <li class="visiting-area__text-sub">※その他の地域でもご相談ください</li>
             <li class="visiting-area__text-sub">※緊急時24時間365日対応いたします</li>
@@ -106,7 +106,7 @@
     </section>
     <section class="section">
       <h2 class="section__title">アクセス</h2>
-      <div class="o-container">
+      <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1693.2905119254954!2d131.4329572581108!3d31.917979271985867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538b75ba150fd3f%3A0xf489b40a624e2f9a!2z44CSODgwLTA4Nzkg5a6u5bSO55yM5a6u5bSO5biC5a6u5bSO6aeF5p2x77yT5LiB55uu77yS4oiS77yS!5e0!3m2!1sja!2sjp!4v1597025984918!5m2!1sja!2sjp"
           width="100%"
@@ -168,7 +168,7 @@ export default {};
   text-align: center;
 
   @include mobile {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 
   @include desktop {
@@ -177,15 +177,22 @@ export default {};
 
   &__description {
     display: block;
-    font-size: 1.6rem;
+
+    @include mobile {
+      font-size: 1.1rem;
+    }
+    @include desktop {
+      font-size: 1.6rem;
+    }
   }
 
   &__image {
     height: auto;
+    margin: 1rem 0;
     line-height: 0;
 
     @include mobile {
-      width: 50vw;
+      width: 70vw;
     }
 
     @include desktop {
@@ -195,13 +202,26 @@ export default {};
 
   &__name {
     display: block;
-    font-size: 2rem;
     font-weight: bold;
+
+    @include mobile {
+      font-size: 1.8rem;
+    }
+
+    @include desktop {
+      font-size: 2rem;
+    }
   }
 }
 
 .section {
-  padding: 100px 0 80px;
+  @include mobile {
+    padding: 50px 0 40px;
+  }
+
+  @include desktop {
+    padding: 100px 0 80px;
+  }
 
   &__title {
     margin-bottom: 1.85rem;
@@ -225,11 +245,16 @@ export default {};
 .o-container {
   max-width: 980px;
   margin: 0 auto;
+
+  @include mobile {
+    padding: 0 3.5vw;
+  }
 }
 
 // 訪問看護のご利用方法
 .usecase-figure {
-  margin-bottom: 1.5rem;
+  max-width: 980px;
+  margin: 0 auto 1.5rem;
   padding: 0.8rem;
 
   &__image {
