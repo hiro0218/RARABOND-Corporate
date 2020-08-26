@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.14.1",
+    "nuxt": "^2.14.3",
     "open-color": "^1.7.0"
   },
   "devDependencies": {
