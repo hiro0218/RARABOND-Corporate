@@ -4,6 +4,11 @@ import Fiber from 'fibers';
 export default {
   mode: 'universal',
   target: 'static',
+
+  router: {
+    base: '/RARABOND-Corporate/',
+  },
+
   /*
    ** Headers of the page
    */
