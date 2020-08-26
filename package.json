@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "yarn generate && push-dir --dir=dist --branch=gh-pages --cleanup",
+    "deploy": "yarn generate && push-dir --dir=dist --branch=gh-pages",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "lint-staged": {
