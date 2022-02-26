@@ -3,7 +3,13 @@
     <header class="header">
       <div class="o-container">
         <span class="header__description">看護とリハビリの訪問ステーション</span>
-        <img src="~/assets/image/logo.png" class="header__image" />
+        <img
+          src="~/assets/image/logo.png"
+          class="header__image"
+          height="400"
+          width="400"
+          alt="「なちゅらる」のロゴ画像"
+        />
         <span class="header__name">なちゅらる</span>
       </div>
     </header>
@@ -42,7 +48,7 @@
     <section class="section">
       <h2 class="section__title">訪問看護サービスの流れ</h2>
       <div class="usecase-figure">
-        <img src="~/assets/image/service-flow.png" class="usecase-figure__image" />
+        <img src="~/assets/image/service-flow.png" class="usecase-figure__image" alt="訪問看護サービスフロー図" />
       </div>
       <div class="o-container">
         <ul class="usecase-notice u-unstyled-list">
@@ -112,7 +118,7 @@
           width="100%"
           height="450"
           frameborder="0"
-          style="border: 0;"
+          style="border: 0"
           allowfullscreen=""
           aria-hidden="false"
           tabindex="0"
@@ -125,15 +131,11 @@
         <table class="about-list">
           <tr>
             <th class="about-list__title">営業時間</th>
-            <td class="about-list__data">
-              月曜日〜金曜日 / 8:30〜17:30
-            </td>
+            <td class="about-list__data">月曜日〜金曜日 / 8:30〜17:30</td>
           </tr>
           <tr>
             <th class="about-list__title">定休日</th>
-            <td class="about-list__data">
-              土日祝日・お盆・年末年始
-            </td>
+            <td class="about-list__data">土日祝日・お盆・年末年始</td>
           </tr>
           <tr>
             <th class="about-list__title">所在地</th>

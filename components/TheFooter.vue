@@ -1,8 +1,6 @@
 <template>
   <footer class="pg-footer">
-    <small class="pg-footer-copyright">
-      ©なちゅらる All Rights Reserved.
-    </small>
+    <small class="pg-footer-copyright">©なちゅらる All Rights Reserved.</small>
   </footer>
 </template>
 
