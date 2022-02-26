@@ -159,7 +159,24 @@
 </template>
 
 <script>
-export default {};
+export default {
+  head() {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "なちゅらる",
+            "url": "https://www.rarabond.com/",
+          }`,
+          type: 'application/ld+json',
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss">
