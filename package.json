@@ -10,7 +10,7 @@
     "build": "minista build",
     "preview": "minista preview",
     "clean": "trash ./dist",
-    "deploy": "npm run generate && push-dir --dir=dist --branch=gh-pages --cleanup",
+    "deploy": "npm run build && push-dir --dir=dist --branch=gh-pages --cleanup",
     "lint:fix": "eslint --cache --fix src/ && prettier --write src/",
     "prepare": "husky install"
   },
