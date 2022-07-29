@@ -1,5 +1,6 @@
 import { Head } from "minista"
 
+import 'shokika.css'
 import "./root.css"
 import AppLayout from "./components/Layout"
 
