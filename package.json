@@ -1,50 +1,66 @@
 {
   "name": "rarabond-corporate",
   "version": "1.0.0",
+  "private": true,
+  "site": "なちゅらる",
   "description": "看護とリハビリの訪問ステーション",
   "author": "hiro0218",
-  "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
+    "dev": "minista",
+    "build": "minista build",
+    "preview": "minista preview",
+    "clean": "trash ./dist",
     "deploy": "npm run generate && push-dir --dir=dist --branch=gh-pages --cleanup",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "lint:fix": "eslint --cache --fix src/ && prettier --write src/",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,vue}": "npm run lint",
-    "*.{css,vue}": "stylelint"
+    "*.{js,tsx}": [
+      "eslint --cache --fix",
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,vue}": [
+      "stylelint --fix",
+      "stylelint",
+      "prettier --write"
+    ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+  "browserslist": [
+    "last 1 Chrome versions",
+    "last 1 Edge versions",
+    "last 1 Firefox versions",
+    "last 1 Safari versions",
+    "last 1 iOS versions",
+    "last 1 ChromeAndroid versions"
+  ],
   "dependencies": {
-    "normalize.css": "^8.0.1",
-    "nuxt": "^2.15.8",
-    "open-color": "^1.9.1"
+    "open-color": "^1.9.1",
+    "push-dir": "^0.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "shokika.css": "^1.6.0"
   },
   "devDependencies": {
-    "@hiro0218/eslint-config": "^1.3.0",
-    "@hiro0218/prettier-config": "^1.0.2",
-    "@hiro0218/stylelint-config": "^1.2.0",
-    "@nuxtjs/eslint-config": "^3.1.0",
-    "@nuxtjs/eslint-module": "^2.0.0",
-    "@nuxtjs/stylelint-module": "^4.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.6.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-nuxt": ">=1.0.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "fibers": "^5.0.1",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "prettier": "^2.5.1",
-    "push-dir": "^0.4.1",
-    "sass": "^1.49.9",
-    "sass-loader": "^9.0.3",
-    "stylelint": "^13.6.1"
+    "@types/node": "^18.6.2",
+    "@types/react": "^17.0.45",
+    "@types/react-dom": "^17.0.16",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "classnames": "^2.3.1",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.30.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "minista": "^2.8.2",
+    "node-fetch": "^3.2.9",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.9.1",
+    "stylelint-config-property-sort-order-smacss": "^9.0.0",
+    "stylelint-config-recommended": "^8.0.0",
+    "stylelint-config-recommended-scss": "^7.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "typescript": "^4.7.4"
   }
 }

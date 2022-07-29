@@ -1,21 +1,28 @@
 module.exports = {
-  root: true,
-  env: {
-    browser: true,
-    node: true,
+  "env": {
+    "browser": true,
+    "es2021": true
   },
-  parserOptions: {
-    parser: 'babel-eslint',
-  },
-  extends: [
-    '@nuxtjs',
-    'prettier',
-    'prettier/vue',
-    'plugin:prettier/recommended',
-    'plugin:nuxt/recommended',
-    '@hiro0218/eslint-config',
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
   ],
-  plugins: ['prettier'],
-  // add your custom rules here
-  rules: {},
-};
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}
