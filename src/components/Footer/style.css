@@ -1,0 +1,9 @@
+.pg-footer {
+  padding: 40px 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.pg-footer-copyright {
+  font-size: 1rem;
+}
