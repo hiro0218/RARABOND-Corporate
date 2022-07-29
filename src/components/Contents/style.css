@@ -10,6 +10,10 @@
   }
 }
 
+.section ul + h3 {
+  margin-top: 2rem;
+}
+
 .section__title {
   margin-bottom: 1.85rem;
   font-size: 2rem;
