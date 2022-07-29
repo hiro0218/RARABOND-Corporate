@@ -6,13 +6,13 @@
   "description": "看護とリハビリの訪問ステーション",
   "author": "hiro0218",
   "scripts": {
+    "dev": "minista",
     "build": "minista build",
+    "preview": "minista preview",
     "clean": "trash ./dist",
     "deploy": "npm run generate && push-dir --dir=dist --branch=gh-pages --cleanup",
-    "dev": "minista",
     "lint:fix": "eslint --cache --fix src/ && prettier --write src/",
-    "prepare": "husky install",
-    "preview": "minista preview"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,tsx}": [
@@ -54,6 +54,7 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "minista": "^2.8.2",
+    "node-fetch": "^3.2.9",
     "prettier": "^2.7.1",
     "stylelint": "^14.9.1",
     "stylelint-config-property-sort-order-smacss": "^9.0.0",

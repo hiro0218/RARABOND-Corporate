@@ -1,5 +1,3 @@
-import type { MinistaLocation } from "minista"
-
 import { Head } from "minista"
 
 import "./root.css"
@@ -11,10 +9,6 @@ type RootProps = {
   children: React.ReactNode
 }
 
-export type PageProps = {
-  location: MinistaLocation
-}
-
 const Root = ({ children }: RootProps) => {
   const site = pkj.site
   const siteTitle = `${pkj.site} | ${pkj.description}`
@@ -23,7 +17,7 @@ const Root = ({ children }: RootProps) => {
   const title = `${site} | ${pkj.description}`
   const ogUrl = siteUrl
   const ogImage = siteUrl + "/assets/images/logo_large.png"
-  const ogType = location.pathname === "/" ? "website" : "article"
+  const ogType = "website"
   const twitterCard = "summary_large_image"
 
   return (
